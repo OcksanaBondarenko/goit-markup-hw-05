@@ -173,6 +173,36 @@ address {
   align-items: center;
 }
 
+.nav-list-item {
+  position: relative;
+}
+
+/* Полоска */
+.nav-list-item > .studio::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196F3;
+  position: absolute;
+  margin-top: 46px;
+  margin-left: -49px;
+}
+
+/* Полоска */
+.nav-list-item > .portfolio::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196F3;
+  position: absolute;
+  margin-top: 46px;
+  margin-left: -77px;
+}
+
+
+
 .nav-list-link {
   font-weight: 500;
   font-size: 14px;
@@ -442,10 +472,6 @@ address {
   background-color: var(--secondary-primary-text-color-theme-dark);
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.footer-container {
-
 }
 
 .footer-social-list {
