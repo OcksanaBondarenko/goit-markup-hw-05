@@ -495,12 +495,13 @@ address {
   margin-left: 30px;
   margin-top: 30px;
   border: 1px solid #AFB1B8;
+  border-radius: 4px;
   transition: var(--trasform-primary);
 }
 
 .clients-list-item:hover,
 .clients-list-item:focus {
-  border: 1px solid #2196F3
+  border: 1px solid #2196F3;
 }
 
 /* ===== Footer ===== */
@@ -532,7 +533,7 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color-theme-dark);
-  margin-bottom: 9px
+  margin-bottom: 9px;
 }
 
 .address-contact-mail {
@@ -544,7 +545,7 @@ address {
   /* or 171% */
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 9px
+  margin-bottom: 9px;
 }
 
 .address-contact-number {
@@ -574,7 +575,7 @@ address {
   margin-right: 10px;
 }
 
-.footer-social-list-link{
+.footer-social-list-link {
   width: 44px;
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
@@ -583,10 +584,14 @@ address {
   justify-content: center;
   align-items: center;
   fill: #ffffff;
-  transform: var(--trasform-primary);
+  transition-property: background-color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
-.footer-social-list-link:hover, .footer-social-list-link:focus{
+.footer-social-list-link:hover,
+.footer-social-list-link:focus{
   background-color: var(--accent-color);
 }
 
@@ -741,7 +746,11 @@ address {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
-  transform: opacity var(--trasform-primary), visibility var(--trasform-primary);
+  /* transform: opacity var(--trasform-primary), visibility var(--trasform-primary); */
+  transition-property: opacity, visibility, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .backdrop.is-hidden {
